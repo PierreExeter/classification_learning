@@ -16,8 +16,8 @@ from sklearn.preprocessing import LabelEncoder
 
 
 # LOAD DATA INTO DATAFRAME
-train_df = pd.read_csv("train.csv", header=0)
-test_df  = pd.read_csv("test.csv", header=0)
+train_df = pd.read_csv("input/train.csv", header=0)
+test_df  = pd.read_csv("input/test.csv", header=0)
 
 # USEFUL INFORMATION
 print train_df.info()
@@ -323,16 +323,16 @@ def write_output(filename, idx, out):
     predictions_file.close()         
 
 
-write_output("logistic_regression.csv", idx, out_logreg)
-write_output("logistic_regression2.csv", idx, out_logreg2)
+write_output("output/logistic_regression.csv", idx, out_logreg)
+write_output("output/logistic_regression2.csv", idx, out_logreg2)
 
-write_output("random_forest.csv", idx, out_rfc)
-write_output("random_forest2.csv", idx, out_rfc2)
+write_output("output/random_forest.csv", idx, out_rfc)
+write_output("output/random_forest2.csv", idx, out_rfc2)
 
-write_output("decision_tree.csv", idx, out_dectre)
-write_output("decision_tree2.csv", idx, out_dectre2)
+write_output("output/decision_tree.csv", idx, out_dectre)
+write_output("output/decision_tree2.csv", idx, out_dectre2)
 
-write_output("svm.csv", idx, out_svc)
-#write_output("../output/knn.csv", idx, out_knn)
+write_output("output/svm.csv", idx, out_svc)
+#write_output(output/knn.csv", idx, out_knn)
 
-write_output("credit_model.csv", idx, out_credit)
+write_output("output/credit_model.csv", idx, out_credit)
